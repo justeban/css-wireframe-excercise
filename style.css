@@ -6,11 +6,26 @@ body, html {
   margin: 0;
   padding:0;
 }
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.125em;
+}
+body {
+  font-size: 16px;
+}
 header, footer {
-  background: #525252;
   margin: 0 auto;
   padding: 30px;
   width: 100%;
+}
+footer {
+  background: #525252;
+  margin-top: 30px;
 }
 nav {
   overflow: auto;  
@@ -29,9 +44,60 @@ nav ul li {
   padding: 0 3em;
   line-height: 70px;
 }
-
-.card header {
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+.header-container {
+  width: 960px;
+  margin: 0 auto;
+}
+main section img {
+  display: block;
+  margin: 0 auto;
+}
+main section li {
+  display: inline-block;
+  list-style-type: none;
+}
+main section li:nth-child(even){
+  margin: 0 30px;
+}
+main section ul {
+  margin: 30px auto;
+  padding: 0;
+  width: 968px;
+}
+.card-container {
+  width: 960px;
+  margin: 0 auto;
+  overflow: auto;
+}
+.card-container .card img {
+  float:left;
+  margin: 0 30px 0 0;
+}
+.card-container .card header {
   background: white;
-  height: 2em;
+  font-size: 1.2em;
+  font-weight: 600;
   width: auto;
+  padding: 0;
+}
+.card-container .card p {
+  height: 293px;
+  margin-bottom: 30px;
+  overflow-y: scroll;
+}
+.card-container .card a {
+  background: black;
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  padding: 10px;
+  transition: all 350ms ease-in-out;
+}
+.card-container .card a:hover {
+  background: #444;
 }
